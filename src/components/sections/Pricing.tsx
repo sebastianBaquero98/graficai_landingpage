@@ -1,6 +1,8 @@
 
 import { Check, X } from "lucide-react";
 import GradientButton from "@/components/ui/GradientButton";
+import { useState } from "react";
+import { Textarea } from "@/components/ui/textarea";
 
 const plans = [
   {
@@ -90,8 +92,23 @@ const plans = [
 ];
 
 const Pricing = () => {
+  const [featureRequest, setFeatureRequest] = useState("");
+  const [requestSubmitted, setRequestSubmitted] = useState(false);
+
+  const handleFeatureRequest = (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log("Feature request submitted:", featureRequest);
+    // Here you would typically send this to your backend
+    setRequestSubmitted(true);
+    // Reset after 3 seconds
+    setTimeout(() => {
+      setRequestSubmitted(false);
+      setFeatureRequest("");
+    }, 3000);
+  };
+
   return (
-    <section id="pricing" className="py-16 md:py-24 bg-gray-50">
+    <section id="pricing" className="py-16 md:py-24 bg-gradient-to-b from-white to-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="mb-4">Simple, <span className="text-gradient">Transparent Pricing</span></h2>
@@ -121,7 +138,9 @@ const Pricing = () => {
                 <h3 className="text-xl font-semibold mb-2">{plan.name}</h3>
                 <div className="mb-4">
                   <span className="text-3xl font-bold">{plan.price}</span>
-                  {plan.price !== "Custom" && <span className="text-gray-500">/month</span>}
+                  {plan.price !== "Custom" && (
+                    <span className="text-gray-500">/user/month</span>
+                  )}
                 </div>
                 <p className="text-gray-600 text-sm mb-6">{plan.description}</p>
                 
@@ -206,14 +225,43 @@ const Pricing = () => {
                   </tr>
                   <tr>
                     <td className="py-3 px-4 text-sm text-gray-700">Monthly Cost (Basic)</td>
-                    <td className="py-3 px-4 text-center text-sm text-dataviz-600 font-medium">$29</td>
-                    <td className="py-3 px-4 text-center text-sm text-gray-600">$10-100+</td>
-                    <td className="py-3 px-4 text-center text-sm text-gray-600">$70+</td>
+                    <td className="py-3 px-4 text-center text-sm text-dataviz-600 font-medium">$29/user</td>
+                    <td className="py-3 px-4 text-center text-sm text-gray-600">$10-100+/user</td>
+                    <td className="py-3 px-4 text-center text-sm text-gray-600">$70+/user</td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
+        </div>
+
+        {/* Feature Request Box */}
+        <div className="mt-16 max-w-2xl mx-auto bg-gradient-to-r from-dataviz-50 to-dataviz-100 p-8 rounded-xl shadow-sm animate-fade-in" style={{ animationDelay: "0.5s" }}>
+          <h3 className="text-2xl font-semibold mb-4">Need Custom Features?</h3>
+          <p className="text-gray-700 mb-6">
+            Tell us about your specific data analysis needs or any features you'd like to see. Our team will get back to you with customized solutions.
+          </p>
+          
+          <form onSubmit={handleFeatureRequest} className="space-y-4">
+            <Textarea 
+              className="w-full p-3 rounded-lg border border-dataviz-200 focus:border-dataviz-500 focus:ring focus:ring-dataviz-200 focus:ring-opacity-50 transition-all resize-none"
+              placeholder="Describe the features or data analysis capabilities you need..."
+              rows={5}
+              value={featureRequest}
+              onChange={(e) => setFeatureRequest(e.target.value)}
+              required
+            />
+            
+            <div className="flex justify-end">
+              <GradientButton 
+                type="submit" 
+                disabled={requestSubmitted} 
+                className="transition-all"
+              >
+                {requestSubmitted ? "Thank You!" : "Submit Request"}
+              </GradientButton>
+            </div>
+          </form>
         </div>
       </div>
     </section>
