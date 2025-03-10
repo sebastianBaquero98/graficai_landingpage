@@ -57,6 +57,13 @@ const Features = () => {
     <section id="features" className="py-16 md:py-24 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
+          <h2 className="mb-4">See <span className="text-gradient">How It Works</span></h2>
+          <p className="text-gray-600 text-lg">
+            Experience the simplicity of our conversational interface. Just chat with our AI and watch as it creates beautiful data visualizations for you.
+          </p>
+        </div>
+
+        <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="mb-4">Powerful Features, <span className="text-gradient">Simple Interface</span></h2>
           <p className="text-gray-600 text-lg">
             DataViz AI combines powerful data analysis capabilities with an
@@ -85,3 +92,4 @@ const Features = () => {
 };
 
 export default Features;
+
