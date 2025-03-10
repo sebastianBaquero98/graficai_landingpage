@@ -34,9 +34,9 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-dataviz-400 to-dataviz-600 flex items-center justify-center text-white font-bold text-lg shadow-lg">
-            DV
+            GA
           </div>
-          <span className="text-xl font-semibold">DataViz AI</span>
+          <span className="text-xl font-semibold">GraficAI</span>
         </div>
 
         {/* Desktop Navigation */}

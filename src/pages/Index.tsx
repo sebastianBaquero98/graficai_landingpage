@@ -10,6 +10,11 @@ import FAQ from "@/components/sections/FAQ";
 import { useEffect } from "react";
 
 const Index = () => {
+  // Update page title
+  useEffect(() => {
+    document.title = "GraficAI - Professional Data Analysis Without Technical Knowledge";
+  }, []);
+
   // Smooth scroll implementation for navigation
   useEffect(() => {
     const handleAnchorClick = (e: MouseEvent) => {

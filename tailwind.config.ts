@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -64,17 +63,17 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				dataviz: {
-					'50': '#eefbf6',
-					'100': '#d5f5e9',
-					'200': '#aeebd7',
-					'300': '#79dcbe',
-					'400': '#42c49f',
-					'500': '#25ab86',
-					'600': '#19896b',
-					'700': '#166c58',
-					'800': '#155647',
-					'900': '#14483c',
-					'950': '#0b2b23',
+					'50': '#e6f9ef',
+					'100': '#ccf3df',
+					'200': '#99e8bf',
+					'300': '#66dc9f',
+					'400': '#33d17f',
+					'500': '#00bf63',
+					'600': '#00a855',
+					'700': '#008644',
+					'800': '#006433',
+					'900': '#004222',
+					'950': '#002111',
 				}
 			},
 			borderRadius: {
@@ -92,6 +91,10 @@ export default {
 					to: { height: '0', opacity: '0' }
 				},
 				'fade-in': {
+					'0%': { opacity: '0', transform: 'translateY(10px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' }
+				},
+				'fade-in-fast': {
 					'0%': { opacity: '0', transform: 'translateY(10px)' },
 					'100%': { opacity: '1', transform: 'translateY(0)' }
 				},
@@ -124,7 +127,7 @@ export default {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.6s ease-out',
-				'fade-in-fast': 'fade-in 0.3s ease-out',
+				'fade-in-fast': 'fade-in-fast 0.3s ease-out',
 				'fade-out': 'fade-out 0.3s ease-out',
 				'scale-in': 'scale-in 0.6s ease-out',
 				'slide-in-right': 'slide-in-right 0.5s ease-out',

@@ -118,7 +118,7 @@ const Hero = () => {
                           <path
                             d="M0,90 C50,80 100,30 150,50 C200,70 250,10 300,20 C350,30 400,90 500,20"
                             fill="none"
-                            stroke="#25ab86"
+                            stroke="#00bf63"
                             strokeWidth="3"
                           />
                         </svg>
@@ -126,6 +126,42 @@ const Hero = () => {
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* New section with the green gradient below hero */}
+      <div className="w-full py-16 bg-gradient-to-r from-dataviz-600 via-dataviz-500 to-dataviz-400 mt-16">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center justify-between">
+            <div className="text-white mb-8 md:mb-0 md:mr-8 max-w-xl">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Transform Your Data Into Insights With GraficAI</h2>
+              <p className="text-white/90 text-lg">
+                Our AI-powered platform makes data visualization accessible to everyone. No coding required, just upload your data and start asking questions.
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-2 gap-4 max-w-md w-full">
+              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl text-white">
+                <div className="text-4xl font-bold mb-2">500+</div>
+                <div className="text-white/80">Data Visualizations</div>
+              </div>
+              
+              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl text-white">
+                <div className="text-4xl font-bold mb-2">98%</div>
+                <div className="text-white/80">Customer Satisfaction</div>
+              </div>
+              
+              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl text-white">
+                <div className="text-4xl font-bold mb-2">10x</div>
+                <div className="text-white/80">Faster Analysis</div>
+              </div>
+              
+              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl text-white">
+                <div className="text-4xl font-bold mb-2">24/7</div>
+                <div className="text-white/80">AI Support</div>
               </div>
             </div>
           </div>
