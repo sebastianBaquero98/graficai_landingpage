@@ -219,9 +219,9 @@ const Demo = () => {
     <section id="demo" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="mb-4">See <span className="text-gradient">How It Works</span></h2>
+          <h2 className="mb-4">Interactive <span className="text-gradient">Chat Demo</span></h2>
           <p className="text-gray-600 text-lg">
-            Experience the simplicity of our conversational interface. Just chat with our AI and watch as it creates beautiful data visualizations for you.
+            Try our interactive demo below to see how simple it is to create beautiful data visualizations with GraficAI.
           </p>
         </div>
 
@@ -231,7 +231,7 @@ const Demo = () => {
               <div className="w-3 h-3 rounded-full bg-red-400"></div>
               <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
               <div className="w-3 h-3 rounded-full bg-green-400"></div>
-              <div className="mx-auto text-sm font-medium text-gray-500">DataViz AI Chat</div>
+              <div className="mx-auto text-sm font-medium text-gray-500">GraficAI Chat</div>
               <div className="w-9"></div>
             </div>
             

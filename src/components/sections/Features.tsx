@@ -66,7 +66,7 @@ const Features = () => {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="mb-4">Powerful Features, <span className="text-gradient">Simple Interface</span></h2>
           <p className="text-gray-600 text-lg">
-            DataViz AI combines powerful data analysis capabilities with an
+            GraficAI combines powerful data analysis capabilities with an
             incredibly simple user experience. No technical skills required.
           </p>
         </div>
@@ -78,7 +78,7 @@ const Features = () => {
               className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100 animate-fade-in"
               style={{ animationDelay: feature.delay }}
             >
-              <div className="feature-icon-container mb-4">
+              <div className="feature-icon-container mb-4 text-[#00bf63]">
                 {feature.icon}
               </div>
               <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
@@ -92,4 +92,3 @@ const Features = () => {
 };
 
 export default Features;
-
