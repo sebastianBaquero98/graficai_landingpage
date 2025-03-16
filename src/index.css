@@ -121,11 +121,11 @@
   }
   
   .text-gradient {
-    @apply bg-gradient-to-r from-dataviz-600 to-dataviz-400 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-dataviz-600 to-ocean-500 bg-clip-text text-transparent;
   }
   
   .feature-icon-container {
-    @apply relative flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-br from-dataviz-400 to-dataviz-600 text-white shadow-lg;
+    @apply relative flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-br from-dataviz-400 to-ocean-600 text-white shadow-lg;
   }
   
   .animated-gradient-border {
@@ -137,7 +137,7 @@
       background: linear-gradient(
         90deg,
         theme('colors.dataviz.400'),
-        theme('colors.dataviz.600'),
+        theme('colors.ocean.500'),
         theme('colors.dataviz.400')
       );
       -webkit-mask: 
