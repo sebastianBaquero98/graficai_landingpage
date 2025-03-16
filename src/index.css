@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -124,7 +125,7 @@
   }
   
   .feature-icon-container {
-    @apply relative flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-br from-ocean-400 to-dataviz-600 text-white shadow-lg;
+    @apply relative flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-br from-ocean-600 to-dataviz-500 text-white shadow-lg;
   }
   
   .animated-gradient-border {
@@ -135,9 +136,9 @@
       @apply absolute inset-0 rounded-xl p-[1px];
       background: linear-gradient(
         90deg,
-        theme('colors.ocean.400'),
+        theme('colors.ocean.600'),
         theme('colors.dataviz.500'),
-        theme('colors.ocean.400')
+        theme('colors.ocean.600')
       );
       -webkit-mask: 
         linear-gradient(#fff 0 0) content-box, 
@@ -147,3 +148,4 @@
     }
   }
 }
+
