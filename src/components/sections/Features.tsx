@@ -78,7 +78,7 @@ const Features = () => {
               className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100 animate-fade-in"
               style={{ animationDelay: feature.delay }}
             >
-              <div className="feature-icon-container mb-4 text-[#00bf63]">
+              <div className="feature-icon-container mb-4">
                 {feature.icon}
               </div>
               <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
