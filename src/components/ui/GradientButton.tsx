@@ -24,9 +24,9 @@ const GradientButton = ({
 
   const variantClasses = {
     default:
-      "bg-gradient-to-r from-ocean-600 via-dataviz-500 to-ocean-400 hover:from-ocean-700 hover:via-dataviz-600 hover:to-ocean-500 text-white shadow-md",
+      "bg-gradient-to-r from-ocean-600 via-ocean-500 to-dataviz-500 hover:from-ocean-700 hover:via-ocean-600 hover:to-dataviz-600 text-white shadow-md",
     outline:
-      "bg-transparent hover:bg-gradient-to-r hover:from-ocean-600/10 hover:via-dataviz-500/10 hover:to-ocean-400/10 border border-ocean-500 text-ocean-600",
+      "bg-transparent hover:bg-gradient-to-r hover:from-ocean-600/10 hover:via-ocean-500/10 hover:to-dataviz-500/10 border border-ocean-500 text-ocean-600",
   };
 
   return (

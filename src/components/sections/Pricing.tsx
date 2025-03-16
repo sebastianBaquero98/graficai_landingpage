@@ -28,7 +28,7 @@ const plans = [
     delay: "0s"
   },
   {
-    name: "Premium",
+    name: "Pro",
     price: "$14.99",
     description: "For professionals and small teams",
     features: [
@@ -49,8 +49,8 @@ const plans = [
     delay: "0.1s"
   },
   {
-    name: "Pro",
-    price: "$14.99",
+    name: "Custom",
+    price: "Contact Us",
     description: "For teams with advanced needs",
     features: [
       "Unlimited charts",
@@ -65,7 +65,7 @@ const plans = [
       "Advanced analytics"
     ],
     limitations: [],
-    cta: "Start 7-Day Trial",
+    cta: "Contact Sales",
     mostPopular: false,
     delay: "0.2s"
   }
@@ -88,11 +88,11 @@ const Pricing = () => {
   };
 
   return (
-    <section id="pricing" className="py-12 md:py-16 bg-gradient-to-b from-white to-gray-50">
+    <section id="pricing" className="py-12 md:py-16 bg-gradient-to-b from-ocean-500 to-ocean-600 text-white">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="mb-4">Simple, <span className="text-gradient">Transparent Pricing</span></h2>
-          <p className="text-gray-600 text-lg">
+          <h2 className="mb-4">Simple, <span className="text-white">Transparent Pricing</span></h2>
+          <p className="text-white/90 text-lg">
             Choose the plan that's right for you. All plans include core features with different limits.
           </p>
         </div>
@@ -101,15 +101,15 @@ const Pricing = () => {
           {plans.map((plan, index) => (
             <div
               key={index}
-              className={`bg-white rounded-xl overflow-hidden transition-all duration-300 animate-fade-in ${
+              className={`bg-white rounded-xl overflow-hidden transition-all duration-300 animate-fade-in text-gray-800 ${
                 plan.mostPopular
-                  ? "ring-2 ring-ocean-500 shadow-lg transform hover:-translate-y-1"
+                  ? "ring-2 ring-dataviz-500 shadow-lg transform hover:-translate-y-1"
                   : "border border-gray-100 shadow-sm hover:shadow-md"
               }`}
               style={{ animationDelay: plan.delay }}
             >
               {plan.mostPopular && (
-                <div className="bg-gradient-to-r from-ocean-600 to-ocean-500 text-white text-xs font-semibold text-center py-1.5">
+                <div className="bg-gradient-to-r from-dataviz-600 to-dataviz-500 text-white text-xs font-semibold text-center py-1.5">
                   MOST POPULAR
                 </div>
               )}
@@ -118,7 +118,7 @@ const Pricing = () => {
                 <h3 className="text-xl font-semibold mb-2">{plan.name}</h3>
                 <div className="mb-3">
                   <span className="text-2xl font-bold">{plan.price}</span>
-                  {plan.price !== "$0" && (
+                  {plan.price !== "$0" && plan.price !== "Contact Us" && (
                     <span className="text-gray-500">/user/month</span>
                   )}
                 </div>
@@ -158,7 +158,7 @@ const Pricing = () => {
           ))}
         </div>
 
-        <div className="mt-14 bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden max-w-5xl mx-auto animate-fade-in" style={{ animationDelay: "0.4s" }}>
+        <div className="mt-14 bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden max-w-5xl mx-auto animate-fade-in text-gray-800" style={{ animationDelay: "0.4s" }}>
           <div className="p-5 md:p-6">
             <h3 className="text-xl font-semibold mb-4">Compare DataViz AI vs Traditional Tools</h3>
             
@@ -223,7 +223,7 @@ const Pricing = () => {
         </div>
 
         {/* Feature Request Box */}
-        <div className="mt-12 max-w-2xl mx-auto bg-gradient-to-r from-dataviz-50 to-ocean-50 p-6 rounded-xl shadow-sm animate-fade-in" style={{ animationDelay: "0.5s" }}>
+        <div className="mt-12 max-w-2xl mx-auto bg-white p-6 rounded-xl shadow-sm animate-fade-in text-gray-800" style={{ animationDelay: "0.5s" }}>
           <h3 className="text-xl font-semibold mb-3">Need Custom Features?</h3>
           <p className="text-gray-700 mb-4 text-sm">
             Tell us about your specific data analysis needs or any features you'd like to see.
@@ -231,7 +231,7 @@ const Pricing = () => {
           
           <form onSubmit={handleFeatureRequest} className="space-y-3">
             <Textarea 
-              className="w-full p-3 rounded-lg border border-ocean-200 focus:border-ocean-500 focus:ring focus:ring-ocean-200 focus:ring-opacity-50 transition-all resize-none"
+              className="w-full p-3 rounded-lg border border-ocean-200 focus:border-ocean-500 focus:ring focus:ring-ocean-200 focus:ring-opacity-50 transition-all resize-none text-gray-800"
               placeholder="Describe the features or data analysis capabilities you need..."
               rows={4}
               value={featureRequest}
