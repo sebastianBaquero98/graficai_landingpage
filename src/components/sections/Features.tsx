@@ -1,5 +1,5 @@
 
-import { LineChart, Database, MessagesSquare, Clock, Coins, Zap, BarChart2, PieChart } from "lucide-react";
+import { Database, MessagesSquare, Clock, Coins, Zap, PieChart } from "lucide-react";
 
 const features = [
   {
@@ -15,40 +15,28 @@ const features = [
     delay: "0.1s",
   },
   {
-    icon: <BarChart2 size={24} />,
-    title: "Beautiful Charts",
-    description: "Create professional-looking charts and graphs with automatic styling and formatting.",
-    delay: "0.2s",
-  },
-  {
-    icon: <LineChart size={24} />,
-    title: "Trend Analysis",
-    description: "Automatically identify trends and patterns in your data with AI-powered analysis.",
-    delay: "0.3s",
-  },
-  {
     icon: <PieChart size={24} />,
     title: "Custom Visualizations",
     description: "Generate the perfect visualization for your specific data needs with simple prompts.",
-    delay: "0.4s",
+    delay: "0.2s",
   },
   {
     icon: <Clock size={24} />,
     title: "Time Saving",
     description: "Reduce chart creation time from hours to seconds with our intuitive AI interface.",
-    delay: "0.5s",
+    delay: "0.3s",
   },
   {
     icon: <Coins size={24} />,
     title: "Cost Effective",
     description: "Save on expensive data analysts and specialized software with our all-in-one platform.",
-    delay: "0.6s",
+    delay: "0.4s",
   },
   {
     icon: <Zap size={24} />,
     title: "Real-Time Updates",
     description: "Connect live data sources for dashboards that update automatically in real-time.",
-    delay: "0.7s",
+    delay: "0.5s",
   },
 ];
 
@@ -71,7 +59,7 @@ const Features = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <div 
               key={index}
