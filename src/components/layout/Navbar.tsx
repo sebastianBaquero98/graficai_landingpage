@@ -3,10 +3,13 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import GradientButton from "@/components/ui/GradientButton";
+import LanguageSelector from "@/components/language/LanguageSelector";
+import { useLanguage } from "@/context/LanguageContext";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { language, setLanguage } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -74,6 +77,10 @@ const Navbar = () => {
         </nav>
 
         <div className="hidden md:flex items-center space-x-4">
+          <LanguageSelector 
+            currentLanguage={language} 
+            onLanguageChange={setLanguage} 
+          />
           <Button variant="ghost" size="sm">
             Login
           </Button>
@@ -129,6 +136,12 @@ const Navbar = () => {
               >
                 FAQ
               </a>
+              <div className="flex items-center">
+                <LanguageSelector 
+                  currentLanguage={language} 
+                  onLanguageChange={setLanguage} 
+                />
+              </div>
               <div className="pt-2 flex flex-col space-y-3">
                 <Button variant="outline" size="sm">
                   Login
