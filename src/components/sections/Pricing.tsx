@@ -167,7 +167,7 @@ const Pricing = () => {
                 <thead>
                   <tr className="border-b border-gray-200">
                     <th className="text-left py-2 px-3 font-medium text-gray-600 text-sm">Feature</th>
-                    <th className="text-center py-2 px-3 font-medium text-ocean-600 text-sm">DataViz AI</th>
+                    <th className="text-center py-2 px-3 font-medium text-ocean-500 text-sm">DataViz AI</th>
                     <th className="text-center py-2 px-3 font-medium text-gray-600 text-sm">Power BI</th>
                     <th className="text-center py-2 px-3 font-medium text-gray-600 text-sm">Tableau</th>
                     <th className="text-center py-2 px-3 font-medium text-gray-600 text-sm">Excel</th>
@@ -176,42 +176,42 @@ const Pricing = () => {
                 <tbody>
                   <tr className="border-b border-gray-200">
                     <td className="py-2 px-3 text-xs text-gray-700">Learning Curve</td>
-                    <td className="py-2 px-3 text-center text-xs text-ocean-600 font-medium">Minimal (minutes)</td>
+                    <td className="py-2 px-3 text-center text-xs text-ocean-500 font-medium">Minimal (minutes)</td>
                     <td className="py-2 px-3 text-center text-xs text-gray-600">Steep (weeks)</td>
                     <td className="py-2 px-3 text-center text-xs text-gray-600">Very Steep (months)</td>
                     <td className="py-2 px-3 text-center text-xs text-gray-600">Moderate (days)</td>
                   </tr>
                   <tr className="border-b border-gray-200">
                     <td className="py-2 px-3 text-xs text-gray-700">Technical Knowledge Required</td>
-                    <td className="py-2 px-3 text-center text-xs text-ocean-600 font-medium">None</td>
+                    <td className="py-2 px-3 text-center text-xs text-ocean-500 font-medium">None</td>
                     <td className="py-2 px-3 text-center text-xs text-gray-600">Significant</td>
                     <td className="py-2 px-3 text-center text-xs text-gray-600">Extensive</td>
                     <td className="py-2 px-3 text-center text-xs text-gray-600">Basic</td>
                   </tr>
                   <tr className="border-b border-gray-200">
                     <td className="py-2 px-3 text-xs text-gray-700">Time to Create First Chart</td>
-                    <td className="py-2 px-3 text-center text-xs text-ocean-600 font-medium">1 minute</td>
+                    <td className="py-2 px-3 text-center text-xs text-ocean-500 font-medium">1 minute</td>
                     <td className="py-2 px-3 text-center text-xs text-gray-600">30+ minutes</td>
                     <td className="py-2 px-3 text-center text-xs text-gray-600">60+ minutes</td>
                     <td className="py-2 px-3 text-center text-xs text-gray-600">15+ minutes</td>
                   </tr>
                   <tr className="border-b border-gray-200">
                     <td className="py-2 px-3 text-xs text-gray-700">Natural Language Interface</td>
-                    <td className="py-2 px-3 text-center text-xs text-ocean-600 font-medium">Advanced</td>
+                    <td className="py-2 px-3 text-center text-xs text-ocean-500 font-medium">Advanced</td>
                     <td className="py-2 px-3 text-center text-xs text-gray-600">Basic</td>
                     <td className="py-2 px-3 text-center text-xs text-gray-600">Limited</td>
                     <td className="py-2 px-3 text-center text-xs text-gray-600">None</td>
                   </tr>
                   <tr className="border-b border-gray-200">
                     <td className="py-2 px-3 text-xs text-gray-700">Automatic Insights</td>
-                    <td className="py-2 px-3 text-center text-xs text-ocean-600 font-medium">Yes</td>
+                    <td className="py-2 px-3 text-center text-xs text-ocean-500 font-medium">Yes</td>
                     <td className="py-2 px-3 text-center text-xs text-gray-600">Limited</td>
                     <td className="py-2 px-3 text-center text-xs text-gray-600">Limited</td>
                     <td className="py-2 px-3 text-center text-xs text-gray-600">Very Limited</td>
                   </tr>
                   <tr>
                     <td className="py-2 px-3 text-xs text-gray-700">Monthly Cost (Basic)</td>
-                    <td className="py-2 px-3 text-center text-xs text-ocean-600 font-medium">$14.99/user</td>
+                    <td className="py-2 px-3 text-center text-xs text-ocean-500 font-medium">$14.99/user</td>
                     <td className="py-2 px-3 text-center text-xs text-gray-600">$10-100+/user</td>
                     <td className="py-2 px-3 text-center text-xs text-gray-600">$70+/user</td>
                     <td className="py-2 px-3 text-center text-xs text-gray-600">$6-12/user</td>
