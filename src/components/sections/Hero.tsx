@@ -19,7 +19,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-white/90 text-lg mb-8 max-w-xl">
-              Upload your Excel data and chat with our AI to create beautiful charts and insightful analysis. It's that simple.
+              Upload your data source and chat with our AI to create beautiful charts and insightful analysis. It's that simple.
             </p>
             
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-8">
